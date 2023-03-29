@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .row {
+            border: 3px solid;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>垂直對齊(相對於row)</h2>
+        <div class="row align-items-start">
+            <div class="col bg-danger">a</div>
+            <div class="col bg-info">b</div>
+            <div class="col bg-warning">c</div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col bg-danger">a</div>
+            <div class="col bg-info">b</div>
+            <div class="col bg-warning">c</div>
+        </div>
+        <div class="row align-items-end">
+            <div class="col bg-danger">a</div>
+            <div class="col bg-info">b</div>
+            <div class="col bg-warning">c</div>
+        </div>
+
+        <!--比較-->
+        <div class="row align-items-start">
+            <div class="col bg-danger" style="font-size:5rem">a</div>
+            <div class="col bg-info">b</div>
+            <div class="col bg-warning">c</div>
+        </div>
+        <div class="row align-items-baseline ">  <!--用文字底線對齊-->
+            <div class="col bg-danger" style="font-size:5rem">a</div>
+            <div class="col bg-info">b</div>
+            <div class="col bg-warning">c</div>
+        </div>
+        <!--比較-->
+
+        <hr />
+        <h2>Col自身對齊(相對於row)</h2>
+        <div class="row">
+            <div class="col align-self-end bg-danger">a</div>
+            <div class="col align-self-start bg-info">b</div>
+            <div class="col align-self-center bg-warning">c</div>
+        </div>
+        <hr />
+        <h2>水平對齊(相對於row)</h2>
+        <h3>靠左對齊</h3>
+        <div class="row justify-content-start">
+            <div class="col-2 bg-danger">a</div>
+            <div class="col-2 bg-info">b</div>
+            <div class="col-2 bg-warning">c</div>
+        </div>
+        <h3>置中對齊</h3>
+        <div class="row justify-content-center">
+            <div class="col-2 bg-danger">a</div>
+            <div class="col-2 bg-info">b</div>
+            <div class="col-2 bg-warning">c</div>
+        </div>
+        <h3>靠右對齊</h3>
+        <div class="row justify-content-end">
+            <div class="col-2 bg-danger">a</div>
+            <div class="col-2 bg-info">b</div>
+            <div class="col-2 bg-warning">c</div>
+        </div>
+        <h3>均分對齊</h3>  <!--以自己為基礎，讓間隔都一樣寬，但頭尾兩側間隔會看比例去調寬度-->
+        <div class="row justify-content-around">
+            <div class="col-2 bg-danger">a</div>
+            <div class="col-2 bg-info">b</div>
+            <div class="col-2 bg-warning">c</div>
+        </div>
+        <h3>分散對齊</h3>  <!--一個靠頭，一個靠尾，中間的平均分散-->
+        <div class="row justify-content-between">
+            <div class="col-2 bg-danger">a</div>
+            <div class="col-2 bg-info">b</div>
+            <div class="col-2 bg-warning">c</div>
+        </div>
+        <h2>移除間隙(gutter) no-gutters</h2>
+        <div class="row no-gutters">
+            <div class="col bg-danger">a</div>
+            <div class="col bg-info">b</div>
+            <div class="col bg-warning">c</div>
+        </div>
+    </div>
+
+
+</body>
+</html>

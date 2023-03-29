@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        Bootstrap
+        <h1>h1 Bootstrap 4</h1>
+        <h2 class="bg-secondary">h2 Bootstrap 4</h2>
+        <h3>h3 Bootstrap 4</h3>
+        <h4>h4 Bootstrap 4</h4>
+        <h5>h5 Bootstrap 4</h5>
+        <h6>h6 Bootstrap 4</h6>
+
+        <hr />
+        <p class="h1">Bootstrap 4</p>
+        <p class="h2 bg-secondary">Bootstrap 4</p>
+        <p class="h3">Bootstrap 4</p>
+        <p class="h4">Bootstrap 4</pv>
+        <p class="h5">Bootstrap 4</p>
+        <p class="h6">Bootstrap 4</p>
+
+        <hr />
+        <span class="h1">Bootstrap 4</span>
+        <span class="h2 bg-secondary">Bootstrap 4</span>
+        <span class="h3">Bootstrap 4</span>
+        <span class="h4">Bootstrap 4</span>
+        <span class="h5">Bootstrap 4</span>
+        <span class="h6">Bootstrap 4</span>
+
+        <hr />
+        <div class="h1">Bootstrap 4</div>
+        <div class="h2 bg-secondary">Bootstrap 4</div>
+        <div class="h3">Bootstrap 4</div>
+        <div class="h4">Bootstrap 4</div>
+        <div class="h5">Bootstrap 4</div>
+        <div class="h6">Bootstrap 4</div>
+
+        <hr />
+
+        <h1>快訊!!政府發錢啦!!</h1>
+        <h1 class="lead">行政院將在院會拍版定案，每人普發6000元，且不排富。</h1>
+        <p>fljsdfjdlsfjkldsfljfdjfkl</p>
+        <hr />
+        <h1>快訊!!政府發錢啦!!</h1>
+        <h1 class="lead text-truncate" style="width:600px">行政院將在院會拍版定案，每人普發6000元，且不排富。行政院將在院會拍版定案，每人普發6000元，且不排富</h1>
+        <p>fljsdfjdlsfjkldsfljfdjfkl</p>
+        <hr />
+        <small>12345</small>
+        <p class="h1">Bootstrap 4 <small>12345</small></p>
+        <p class="h2">Bootstrap 4 <small>12345</small></p>
+        <p class="h3">Bootstrap 4 <small>12345</small></p>
+        <p class="h4">Bootstrap 4 <small>12345</small></p>
+        <p class="h5">Bootstrap 4 <small>12345</small></p>
+        <p class="h6">Bootstrap 4 <small>12345</small></p>
+        <hr />
+
+        <p>使用文件輸入語法: <code class="bg-light"> document.write("Hello Javascript!!");</code></p>
+        <h2 class="bg-success text-light text-center">Ajax and WebAPI Code<small>(Restfu)</small></h2>
+        <pre class="bg-light border">
+           
+            &lt;script&gt;
+                var item = "";
+                $.ajax({
+                type: 'get',
+                url: 'https://api.kcg.gov.tw/api/service/get/a0d61f1f-5727-477d-bde0-218f88a46813',
+                success: function (data) {
+                console.log(data.data);
+
+                item = "&lt;table border='1' width=1200 style='margin:auto'>";
+                item += "&lt;tr&gt;";
+                item += "&lt;th&gt;年度&lt;/th&gt;";
+                item += "&lt;th&gt;項目&lt;/th&gt;";
+                item += "&lt;th&gt;稅目別&lt;/th&gt;";
+
+                item += "&lt;/tr>";
+                for (i = 0; i < data.data.length; i++) {
+                item += "&lt;tr&gt;";
+                item += "&lt;td&gt;" + data.data[i].資料年度 + "&lt;/td&gt;";
+                item += "&lt;td&gt;" + data.data[i].統計項目 + "&lt;/td&gt;";
+                item += "&lt;td&gt;" + data.data[i].稅目別 + "&lt;/td&gt;";
+
+                item += "&lt;/tr&gt;";
+                }
+                item += "&lt;/table&gt;";
+
+                $('#container').append(item);
+                },
+                error: function () {
+                alert('Error!!');
+                }
+                });
+            &lt;/script&gt;
+
+        </pre>
+
+
+        <mark>請特別注意</mark>，操作本系統時可以按下<kbd>Crtl+F</kbd>進行本文搜尋
+        <hr />
+    </div>
+
+    
+
+</body>
+</html>

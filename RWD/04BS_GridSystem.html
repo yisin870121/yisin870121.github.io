@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <!--container後面接 ex:container-fluid，container的內容會依網頁比例大小改變-->
+    <div class="container">
+        <!--列-->
+        <div class="row">
+            <div class="bg-danger col">Col 1</div>  <!--欄--> <!--沒有寫佔幾格就是平均分配-->
+            <div class="bg-info col">Col 2</div>
+            <div class="bg-success col">Col 3</div>
+        </div>
+        <div class="row">
+            <div class="bg-warning col">Col 4</div>
+            <div class="bg-secondary col">Col 5</div>
+            <div class="bg-primary col">Col 6</div>
+            <div class="bg-danger col">Col 7</div>
+        </div>
+        <!--一個橫面佔12格(100%)，切三等份，有寫佔6格代表佔頁面50%-->
+        <div class="row">
+            <div class="bg-danger col-6">Col 8</div>
+            <div class="bg-info col">Col 9</div>
+            <div class="bg-success col">Col 10</div>
+        </div>
+        <!--切五等份-->
+        <div class="row">
+            <div class="bg-warning col">Col 11</div>
+            <div class="bg-secondary col">Col 12</div>
+            <div class="bg-primary col">Col 13</div>
+            <div class="bg-danger col">Col 14</div>
+            <div class="bg-info col">Col 15</div>
+        </div>
+
+        <hr />
+        <div class="row">
+            <div class="bg-danger col-md">Col 1</div>
+            <div class="bg-info col-md">Col 2</div>
+            <div class="bg-success col-md">Col 3</div>
+        </div>
+        <div class="row">
+            <div class="bg-warning col-lg-3 col-md-4">Col 4</div>
+            <div class="bg-secondary col-lg-2 col-md-4">Col 5</div>
+            <div class="bg-primary col-lg-4 col-md-2">Col 6</div>
+            <div class="bg-danger col-lg-3 col-md-2">Col 7</div>
+        </div>
+
+        <hr />
+        <h3>多寬多行</h3>
+        <div class="row">
+            <div class="bg-warning col-3">Col 1</div>
+            <div class="bg-secondary col-4">Col 2</div>
+            <div class="bg-primary col-8">Col 3</div>
+            <div class="bg-danger col-4">Col 4</div>
+        </div>
+        <div class="row">
+            <div class="bg-warning col">Col 1</div>
+            <div class="bg-secondary col">Col 2</div>
+            <div class="bg-primary col">Col 3</div>
+            <div class="w-100"></div>   <!--斷行--> <!--等於width:100%-->
+            <div class="bg-danger col">Col 4</div>
+            <div class="bg-warning col">Col 5</div>
+        </div>
+    </div>
+
+</body>
+</html>

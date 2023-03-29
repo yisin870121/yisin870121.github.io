@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/Mystyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+
+        </div>
+    </div>    
+        <script src="Scripts/jquery-3.6.1.min.js"></script>
+        <script>
+            //要使用open data資料介接必須使用ajax
+
+            $.ajax({
+                type: 'get',
+                url: 'https://data.coa.gov.tw/Service/OpenData/ODwsv/ODwsvAttractions.aspx',
+                success: function (data) {
+                    //alert("資料取得成功");
+                    console.log(data);
+                    var dataItem = "";
+                    for (var item of data) {
+                        dataItem=
+                        `<div class="card shadow col-lg-3 col-sm-6">
+                            <img src="${item.Photo}" class="card-img-top img-thumbnail" />
+                            <div class="card-body">
+                                <h4 class="card-title">${item.Name}</h4>
+                                <h5>${item.City}${item.Town}</h5>
+                                <p class="card-text">${item.Address}</p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <a href="https://www.google.com/maps/search/${item.Address}/@${item.Latitude},${item.Longitude},15z/" target="_blank" class="btn btn-primary btn-block">查看地圖</a>
+                            </div>
+                         </div>`
+
+                        $('.container>.row').append(dataItem);
+
+
+                    }
+
+
+                }
+            });
+
+
+
+        </script>
+    
+   
+</body>
+</html>

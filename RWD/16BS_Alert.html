@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/MyStyle.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="alert alert-danger">
+            您現在是最高權限管理員,使用後請立刻登出系統!!
+        </div>
+        <hr />
+        <div class="alert alert-success">
+            <h4 class="alert-heading">Well done!</h4>
+            <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+            <hr>
+            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+        </div>
+
+        <hr />
+        <div class="alert alert-warning alert-dismissible fade show" id="myAlert">
+            <strong>您現在是最高權限管理員,使用後請立刻登出系統!!</strong>
+            <button type="button" class="close" data-dismiss="alert">
+                <span>&times;</span>
+            </button>
+        </div>
+
+
+    </div>
+    <script src="Scripts/jquery-3.6.1.min.js"></script>
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <script>
+        $('#myAlert').on('closed.bs.alert', function () {
+            alert("再見囉!!有錢再來,沒錢就再見囉!!!");
+        })
+
+
+        $('#myAlert').on('close.bs.alert', function () {
+            alert("使用後請記得登出哦!!!");
+        })
+    </script>
+</body>
+</html>

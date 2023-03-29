@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .row {
+            border: 3px solid;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col bg-danger">第一欄</div>
+            <div class="col bg-info">第二欄</div>
+            <div class="col bg-warning">第三欄</div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col bg-danger">第一欄,不參與排序</div>  <!--不參與order排序的就依照自己的順序去排-->
+            <div class="col bg-info order-10">第二欄,排在最後面</div>  <!--order後接的數字越大排在越後面-->
+            <div class="col bg-warning">第三欄,不參與排序</div>
+            <div class="col bg-success order-9">第四欄,排在最前面</div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-3 bg-danger">第一欄</div>
+            <div class="col-3 bg-info ml-auto mr-auto">第二欄(ml-auto mr-auto)</div>
+            <!-- m :margin，邊界距離，物件跟物件間的距離，後面數字越大距離越大，範例:m-5-->
+            <!-- p :padding，文字對自身邊界距離，後面數字越大padding距離越大，範例:p-5-->
+            <!--範例:ml-5，l可替換，l為left，t為top，r為right...以此類推-->
+            <!--auto為到邊界距離能多大就多大-->
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-3 bg-danger ml-auto">第一欄(ml-auto)</div>
+            <div class="col-3 bg-info ml-auto">第二欄(ml-auto)</div>
+
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col bg-danger">第一欄(mr-auto)</div>
+            <div class="col bg-info">第二欄第二欄第二欄第二欄第二欄第二欄第二欄第二欄第二欄第二欄第二欄第二欄第二欄第二欄</div>
+            <!--英文的特性:有空格就會換行，空格前為一個字，空格後為一個字-->
+            <div class="col bg-warning">PneumonoultramicroscopicsilicovolcanoconiosisPneumonoultramicroscopicsilicovolcanoconiosis Pneumonoultramicroscopicsilicovolcanoconiosis</div>
+        </div>
+        <div class="row">
+            <div class="col-4 bg-danger">第一欄(mr-auto)</div>
+            <div class="col-4 bg-info">第二欄第二欄第二欄第二欄第二欄第二欄第二欄第二欄第二欄第二欄第二欄第二欄第二欄第二欄</div>
+            <!--英文的特性:有空格就會換行，空格前為一個字，空格後為一個字-->
+            <div class="col-4 bg-warning">PneumonoultramicroscopicsilicovolcanoconiosisPneumonoultramicroscopicsilicovolcanoconiosis Pneumonoultramicroscopicsilicovolcanoconiosis</div>
+        </div>
+        <div class="row">
+            <div class="col-auto mr-auto bg-danger">第一欄(mr-auto)</div>
+            <div class="col-auto bg-info">第二欄第二欄第二欄第二欄第二欄第二欄第二欄第二欄第二欄第二欄第二欄第二欄第二欄第二欄</div>
+            <!--英文的特性:有空格就會換行，空格前為一個字，空格後為一個字-->
+            <div class="col-auto bg-warning">PneumonoultramicroscopicsilicovolcanoconiosisPneumonoultramicroscopicsilicovolcanoconiosis Pneumonoultramicroscopicsilicovolcanoconiosis Pneumonoultramicroscopicsilicovolcanoconiosis</div>
+        </div>
+    </div>
+
+
+</body>
+</html>

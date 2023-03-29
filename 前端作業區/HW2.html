@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="PlayerStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <audio controls="controls" id="myAudio" hidden> <!--隱藏hidden-->
+        <source type="audio/mpeg" />
+    </audio>
+    <hr />
+    <div id="controlPanel">
+        <!--<span onclick="pauseAudio()">;</span>-->
+        <select id="music" onchange="changeMusic(0)">
+            
+        </select>
+        <div id="info">
+            <marquee>請按下播放鍵</marquee>
+        </div>
+        <input id="progress" type="range" value="0" oninput="setProgressBar()" />
+        <div class="a">正常</div>
+        <div class="a">00:00 / 00:00</div>
+        <hr />
+        <br />
+        <div id="btnArea">
+            <span onclick="playAudio()">4</span>
+            <span onclick="stopAudio()"><</span>
+            <span onclick="changeMusic(-1)">9</span>
+            <span onclick="changeTime(-10)">7</span>
+            <span onclick="changeTime(10)">8</span>
+            <span onclick="changeMusic(1)">:</span>
+            <span onclick="setMuted()">V</span>
+            <span onclick="setLoop()">q</span>
+            <span onclick="setRandom()">s</span>
+            <span onclick="setAllLoop()">`</span>
+            <span onclick="showBook()">@</span>
+        </div>
+        <br />
+        <input id="setVolValue" type="range" oninput="setVolume()" value="40" />
+        <button class="btnVol" onclick="btnSetVolume(-1)">-</button>
+        <button class="btnVol" onclick="btnSetVolume(1)">+</button>
+        <input id="volValue" type="text" readonly />
+        <div id="book" class="hide">
+            <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div title="music/nothing.mp3">Nothing Gonna Change My Love For You</div>
+                <div title="music/airball.mp3">告白氣球</div>
+                <div title="music/elysees.mp3">Champs-Elyees</div>
+                <div title="music/moon.mp3">私奔到月球</div>
+                <div title="music/travel.mp3">帶你去旅行</div>
+            </div>
+            <div ondrop="drop(event)" ondragover="allowDrop(event)">
+
+            </div>
+            <button onclick="updateMusic()">更新歌單</button>
+        </div>
+    </div>
+    
+    <script src="PlayerJS.js"></script>
+
+</body>
+</html>

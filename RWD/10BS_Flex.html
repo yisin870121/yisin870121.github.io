@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    
+
+</head>
+<body>
+    <div class="container">
+        <h2>Flexbox</h2>
+        <h3>Row</h3>
+        <div class="d-flex">
+            <div class="bg-danger col">Col 1</div>
+            <div class="bg-info col">Col 2</div>
+            <div class="bg-warning col">Col 3</div>
+        </div>
+        <div class="d-flex flex-row-reverse">
+            <div class="bg-primary col">Col 1</div>
+            <div class="bg-success col">Col 2</div>
+            <div class="bg-secondary col">Col 3</div>
+        </div>
+        <hr />
+        <h3>Column</h3>
+        <div class="d-flex flex-column">
+            <div class="bg-danger">Col 1</div>
+            <div class="bg-info">Col 2</div>
+            <div class="bg-warning">Col 3</div>
+        </div>
+        <div class="d-flex flex-column-reverse">
+            <div class="bg-primary">Col 1</div>
+            <div class="bg-success">Col 2</div>
+            <div class="bg-secondary">Col 3</div>
+        </div>
+        <hr />
+        <h3>justify</h3>
+        <div class="border border-danger d-flex justify-content-start">
+            <div class="bg-danger">Col 1</div>
+            <div class="bg-info">Col 2</div>
+            <div class="bg-warning">Col 3</div>
+        </div>
+        <div class="border border-info d-flex justify-content-center">
+            <div class="bg-primary">Col 1</div>
+            <div class="bg-success">Col 2sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+            <div class="bg-secondary">Col 3</div>
+        </div>
+        <div class="border border-primary d-flex justify-content-end" style="height:300px">
+            <div class="bg-danger">Col 1</div>
+            <div class="bg-info">Col 2</div>
+            <div class="bg-warning">Col 3</div>
+        </div>
+        <hr />
+        <h3>align-item</h3>
+        <div class="border border-primary d-flex align-items-center" style="height:200px">
+            <div class="bg-danger">Col 1</div>
+            <div class="bg-info">Col 2</div>
+            <div class="bg-warning">Col 3</div>
+        </div>
+        <div class="border border-primary d-flex align-items-end" style="height:200px">
+            <div class="bg-primary">Col 1</div>
+            <div class="bg-success">Col 2</div>
+            <div class="bg-secondary">Col 3</div>
+        </div>
+        <div class="border border-primary d-flex align-items-start" style="height:200px">
+            <div class="bg-danger">Col 1</div>
+            <div class="bg-info">Col 2</div>
+            <div class="bg-warning">Col 3</div>
+        </div>
+        <div class="border border-primary d-flex align-items-baseline" style="height:200px">
+            <div class="bg-primary">Col 1</div>
+            <div class="bg-success" style="font-size:3rem">Col 2</div>
+            <div class="bg-secondary">Col 3</div>
+        </div>
+        <div class="border border-primary d-flex align-items-stretch" style="height:200px">
+            <div class="bg-danger">Col 1</div>
+            <div class="bg-info">Col 2</div>
+            <div class="bg-warning">Col 3</div>
+        </div>
+
+        <hr />
+        <h3>align-self</h3>
+        <div class="border border-primary d-flex" style="height:200px">
+            <div class="bg-danger">Col 1</div>
+            <div class="bg-info align-self-start">Col 2</div>
+            <div class="bg-warning">Col 3</div>
+        </div>
+        <div class="border border-primary d-flex" style="height:200px">
+            <div class="bg-primary">Col 1</div>
+            <div class="bg-success align-self-center">Col 2</div>
+            <div class="bg-secondary">Col 3</div>
+        </div>
+        <div class="border border-primary d-flex" style="height:200px">
+            <div class="bg-danger">Col 1</div>
+            <div class="bg-info align-self-end">Col 2</div>
+            <div class="bg-warning">Col 3</div>
+        </div>
+        <div class="border border-primary d-flex" style="height:200px">
+            <div class="bg-primary align-self-baseline" style="font-size:2rem">Col 1</div>
+            <div class="bg-success align-self-baseline" style="font-size:3rem">Col 2</div>
+            <div class="bg-secondary align-self-baseline">Col 3</div>
+        </div>
+        <hr />
+        <h3>fill</h3>
+        <div class="d-flex">
+            <div class="bg-danger flex-fill">Col 1</div>
+            <div class="bg-info">Col 2</div>
+            <div class="bg-warning flex-fill">Col 3</div>
+        </div>
+        <hr />
+        <h3>auto margins</h3>
+        <div class="d-flex">
+            <div class="bg-danger">Col 1</div>
+            <div class="bg-info">Col 2</div>
+            <div class="bg-warning">Col 3</div>
+        </div>
+        <div class="d-flex mt-3">
+            <div class="bg-primary mr-auto ml-auto">Col 1</div>
+            <div class="bg-success">Col 2</div>
+            <div class="bg-secondary">Col 3</div>
+        </div>
+        <div class="d-flex">
+            <div class="bg-danger">Col 1</div>
+            <div class="bg-info">Col 2</div>
+            <div class="bg-warning ml-auto">Col 3</div>
+        </div>
+        <hr />
+        <h3>with align-item</h3>
+        <div class="border border-primary d-flex align-items-lg-start flex-column" style="height:200px">
+            <div class="bg-danger mb-auto">Col 1</div>
+            <div class="bg-info">Col 2</div>
+            <div class="bg-warning">Col 3</div>
+        </div>
+        <div class="border border-primary d-flex align-items-lg-start flex-column" style="height:200px">
+            <div class="bg-primary">Col 1</div>
+            <div class="bg-success">Col 2</div>
+            <div class="bg-secondary mt-auto">Col 3</div>
+        </div>
+    </div>
+
+
+</body>
+</html>

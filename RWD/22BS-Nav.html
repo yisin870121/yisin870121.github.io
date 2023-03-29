@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/MyStyle.css" rel="stylesheet" />
+</head>
+<body>
+   
+    <div class="container">
+
+        <ul class="nav nav-tabs" id="myTab">
+            <li class="nav-item">
+                <button class="nav-link active" id="home-tab" data-toggle="tab" data-target="#home" type="button">Home</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#profile" type="button">Profile</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#contact" type="button">Contact</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="About-tab" type="button" data-toggle="tab" data-target="#About">About</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home">page1</div>
+            <div class="tab-pane fade" id="profile">page2</div>
+            <div class="tab-pane fade" id="contact">page3</div>
+            <div class="tab-pane fade" id="About">page4</div>
+        </div>
+    </div>
+   
+
+    <script src="Scripts/jquery-3.6.1.min.js"></script>
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

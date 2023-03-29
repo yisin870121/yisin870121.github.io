@@ -1,0 +1,63 @@
+﻿.table-green {
+    color: #006d0e;
+    background-color: #4cff00;
+}
+
+
+.table-danger th,
+.table-danger td,
+.table-danger thead th,
+.table-danger tbody + tbody {
+   /* border-color: #ff6a00;*/
+    border-bottom: 3px double #ff6a00 ;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    
+    color: red;
+    content: ">";
+}
+
+.jumbotron {
+    background-image: url('../photo/00.jpg');
+    background-repeat:round;
+    
+}
+
+.txtFont{
+    color:white;
+    text-shadow:2px 2px 1px black;
+}
+
+
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    white-space: normal;
+}
+
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*.btn-link {
+    font-weight: 400;
+    color: #007bff;
+    text-decoration: none;
+}*/
+
+
+
+/*如果網頁沒有改變，則到網頁按shift+F5*/

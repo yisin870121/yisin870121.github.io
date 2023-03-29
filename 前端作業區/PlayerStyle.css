@@ -1,0 +1,130 @@
+﻿#controlPanel {
+    border: 2px solid pink;
+    background-color: #e3b9f7;
+    width: 600px;
+    margin: auto;
+    border-radius: 6px;
+    padding: 15px;
+    text-align: center;
+}
+
+    #controlPanel > hr {
+        height: 1px;
+        border: none;
+        background-color: white;
+    }
+
+#btnArea > span {
+    margin: 5px;
+    font-family: Webdings;
+    font-size: 2rem;
+    color: #f68bd3;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid pink;
+    border-radius: 50%;
+    padding: 1px;
+}
+
+.btnVol {
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow: 0px 0px 1px hotpink;
+    color: hotpink;
+    background-color: white;
+}
+
+#volValue {
+    border: white;
+    width: 25px;
+    text-align: center;
+    background-color: white;
+    color: hotpink;
+}
+
+#setVolValue {
+    width: 100px;
+    height: 5px;
+    /*background-color:#ee71b0;*/
+    appearance: none;
+}
+
+    #setVolValue::-webkit-slider-thumb { /*Chrome及其他瀏覽器*/
+        appearance: none;
+        background-color: hotpink;
+        border-radius: 5px;
+        width: 12px;
+        height: 12px;
+    }
+
+    #setVolValue::-moz-range-thumb { /*火狐*/
+        border: 3px solid hotpink;
+        background-color: hotpink;
+        width: 12px;
+        height: 12px;
+    }
+
+#progress {
+    width: inherit;
+    height: 5px;
+    appearance: none;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+    #progress::-webkit-slider-thumb {
+        appearance: none;
+        background-color: hotpink;
+        cursor: pointer;
+        width: 10px;
+        height: 5px;
+        transition: .5s; /*半秒*/
+    }
+
+        #progress::-webkit-slider-thumb:hover {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+    #progress::-moz-range-thumb {
+        background-color: hotpink;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        transition: .5s;
+    }
+
+        #progress::-moz-range-thumb:hover {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+#music {
+    border: white;
+    width: 600px;
+    color: hotpink;
+    text-align: center;
+}
+
+#book > div {
+    border: 1px groove;
+    background-color: white;
+    width: 298px;
+    height: 200px;
+    float: left;
+    font-size: 12px;
+}
+
+.hide {
+    display: none;
+}
+
+#info {
+    color: white;
+}
+
+.a {
+    color: white;
+}
